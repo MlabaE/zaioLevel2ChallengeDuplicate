@@ -14,23 +14,20 @@ and open the template in the editor.
         
          <script type="text/javascript">
             function firstDuplicate(array){
+                
                var arrlength = array.length; 
-               var array2 = [];
+               
                for(x=0; x<=arrlength; x++)
                {
                   for(i=x+1; i<=arrlength; i++)
                   {
                       if(array[x] === array[i])
                       {
-                          array2.push(array.indexOf(array[i])); 
+                          return array[x];
                       }
                   }
                 }
-                
-                var num = array2.min();
-                var value = array[num];
-               return value;
-            
+                return -1;   
     }
     
     
