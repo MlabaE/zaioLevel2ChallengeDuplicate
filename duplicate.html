@@ -22,13 +22,14 @@ and open the template in the editor.
                   {
                       if(array[x] === array[i])
                       {
-                          array2.push(array.indexOf(i)); 
+                          array2.push(array.indexOf(array[i])); 
                       }
                   }
                 }
                 
-                var num = array2.max(); 
-               return num;
+                var num = array2.max();
+                var value = array[num];
+               return value;
             
     }
     
